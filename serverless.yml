@@ -1,8 +1,8 @@
-service: node8-serverless
+service: node10-serverless
 frameworkVersion: '>=1.2.0 <2.0.0'
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs10.x
 plugins:
   - serverless-iam-roles-per-function
   - serverless-cf-vars
@@ -29,7 +29,7 @@ resources:
     StackTagName:
       Type: String
       Description: Stack Name (injected by Stackery at deployment time)
-      Default: node8-serverless
+      Default: node10-serverless
     EnvironmentTagName:
       Type: String
       Description: Environment Name (injected by Stackery at deployment time)
