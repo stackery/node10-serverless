@@ -13,7 +13,7 @@ functions:
       Fn::Sub:
         - 'Stack #{StackTagName} Environment #{EnvironmentTagName} Function #{ResourceName}'
         - ResourceName: Function
-    runtime: nodejs8.10
+    runtime: nodejs10.x
     tracing: Active
     iamRoleStatements:
       - Effect: Allow
